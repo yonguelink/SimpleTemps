@@ -15,7 +15,7 @@ Plugin=Chameleon
 Parent=ChameleonDesktop
 Format=Dec
 Color=Luminance
-IfCondition=Luminance > 0.5
+IfCondition=Luminance > 0.6
 IfTrueAction=[!SetVariable colorText "000000"][!UpdateMeter *][!Redraw]
 IfFalseAction=[!SetVariable colorText "FFFFFF"][!UpdateMeter *][!Redraw]
 

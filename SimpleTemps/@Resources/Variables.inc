@@ -1,5 +1,11 @@
 ; This file contains all variables that you should change
 [Variables]
+;------------
+; Screen Position To Sample Colors
+;------------
+PosX=1760
+PosY=484
+
 ; -----------
 ; CPU
 ; -----------

@@ -8,6 +8,10 @@ BackgroundMode=1
 Measure=Plugin
 Plugin=Chameleon
 Type=Desktop
+CropX=#PosX#
+CropY=#PosY#
+CropW=160
+CropH=(4 * 38) + (5 * 18)
 
 [Luminance]
 Measure=Plugin
@@ -15,7 +19,7 @@ Plugin=Chameleon
 Parent=ChameleonDesktop
 Format=Dec
 Color=Luminance
-IfCondition=Luminance > 0.6
+IfCondition=Luminance > 0.5
 IfTrueAction=[!SetVariable colorText "000000"][!UpdateMeter *][!Redraw]
 IfFalseAction=[!SetVariable colorText "FFFFFF"][!UpdateMeter *][!Redraw]
 

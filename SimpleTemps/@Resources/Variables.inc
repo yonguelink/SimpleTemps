@@ -39,7 +39,7 @@ GPU-USAGE-EntryId=0x7000000
 
 
 ; -----------
-; Water Cooling
+; Cooling
 ; -----------
 
 WATER-TEMP-SensorId=0xf0008686
@@ -49,6 +49,22 @@ WATER-TEMP-EntryId=0x1000005
 PUMP-SPEED-SensorId=0xf0008686
 PUMP-SPEED-SensorInstance=0x0
 PUMP-SPEED-EntryId=0x3000000
+
+CPU1-SPEED-SensorId=0xf0008686
+CPU1-SPEED-SensorInstance=0x0
+CPU1-SPEED-EntryId=0x3000000
+
+CPU2-SPEED-SensorId=0xf0008686
+CPU2-SPEED-SensorInstance=0x0
+CPU2-SPEED-EntryId=0x3000004
+
+GPU-FAN1-SensorId=0xe0002000
+GPU-FAN1-SensorInstance=0x0
+GPU-FAN1-EntryId=0x3000000
+
+GPU-FAN2-SensorId=0xe0002000
+GPU-FAN2-SensorInstance=0x0
+GPU-FAN2-EntryId=0x3000001
 
 FAN1-SPEED-SensorId=0xf0008686
 FAN1-SPEED-SensorInstance=0x0

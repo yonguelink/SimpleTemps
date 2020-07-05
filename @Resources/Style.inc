@@ -10,18 +10,21 @@ Plugin=Chameleon
 Type=Desktop
 CropX=#PosX#
 CropY=#PosY#
-CropW=160
-CropH=(4 * 38) + (5.75 * 18)
+CropW=#LumWidth#
+CropH=#LumHeight#
 
-[Luminance]
+[FontLuminance]
 Measure=Plugin
 Plugin=Chameleon
 Parent=ChameleonDesktop
 Format=Dec
 Color=Luminance
-IfCondition=Luminance > 0.5
+IfCondition=FontLuminance > 0.5
 IfTrueAction=[!SetVariable colorText "000000"][!UpdateMeter *][!Redraw]
 IfFalseAction=[!SetVariable colorText "FFFFFF"][!UpdateMeter *][!Redraw]
+IfCondition2=FontLuminance > 0.5
+IfTrueAction2=[!SetVariable fontEffectColor "FFFFFF80"][!UpdateMeter *][!Redraw]
+IfFalseAction2=[!SetVariable fontEffectColor "00000080"][!UpdateMeter *][!Redraw]
 
 [Variables]
 fontName="Accidental Presidency"
@@ -31,7 +34,10 @@ fontName="Accidental Presidency"
 FontSize=38
 FontColor=#colorText#
 
-MeasureName=Luminance
+StringEffect=Border
+FontEffectColor=#fontEffectColor#
+
+MeasureName=FontLuminance
 DynamicVariables=1
 
 FontFace=#fontName#
@@ -44,7 +50,10 @@ Padding=-5,0,0,0
 FontSize=18
 FontColor=#colorText#
 
-MeasureName=Luminance
+StringEffect=Border
+FontEffectColor=#fontEffectColor#
+
+MeasureName=FontLuminance
 DynamicVariables=1
 
 FontFace=#fontName#
@@ -55,7 +64,10 @@ AntiAlias=1
 FontSize=18
 FontColor=#colorText#
 
-MeasureName=Luminance
+StringEffect=Border
+FontEffectColor=#fontEffectColor#
+
+MeasureName=FontLuminance
 DynamicVariables=1
 
 FontFace=#fontName#

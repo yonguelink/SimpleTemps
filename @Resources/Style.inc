@@ -11,7 +11,7 @@ Type=Desktop
 CropX=#PosX#
 CropY=#PosY#
 CropW=160
-CropH=(4 * 38) + (5 * 18)
+CropH=(4 * 38) + (5.75 * 18)
 
 [Luminance]
 Measure=Plugin

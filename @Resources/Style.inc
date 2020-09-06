@@ -20,10 +20,10 @@ Parent=ChameleonDesktop
 Format=Dec
 Color=Luminance
 IfCondition=FontLuminance > 0.5
-IfTrueAction=[!SetVariable colorText "000000"][!UpdateMeter *][!Redraw]
+IfTrueAction=[!SetVariable colorText "FFFFFF"][!UpdateMeter *][!Redraw]
 IfFalseAction=[!SetVariable colorText "FFFFFF"][!UpdateMeter *][!Redraw]
 IfCondition2=FontLuminance > 0.5
-IfTrueAction2=[!SetVariable fontEffectColor "FFFFFF80"][!UpdateMeter *][!Redraw]
+IfTrueAction2=[!SetVariable fontEffectColor "00000080"][!UpdateMeter *][!Redraw]
 IfFalseAction2=[!SetVariable fontEffectColor "00000080"][!UpdateMeter *][!Redraw]
 
 [Variables]
